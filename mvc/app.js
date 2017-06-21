@@ -28,3 +28,7 @@ app.use(mappings(`${__dirname}/controller`))
 app.listen(opts.server.port, () => {
   console.log(`mvc demo start at port ${opts.server.port}!`)
 })
+
+process.on('exit', function (code) {
+    console.log('process is stopped: ' + code);
+});

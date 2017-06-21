@@ -1,19 +1,18 @@
 # node note
 Node 学习笔记
 
-### app.js
+### file/*
 
-1.consle 输出
-2.文件
+文件
 
 ### http/*
 
 web
 
-### koa/app.js
+### koa/*
 
-controller
+api
 
-### mvc/app.js
+### mvc/*
 
 mvc 
