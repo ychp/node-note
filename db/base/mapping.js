@@ -1,9 +1,15 @@
 const addMapping = function(router, mappings) {
   for(let url in mappings) {
-    if(url.startsWith('GET'))
+    if(url.startsWith('GET')) {
       var path = url.split(' ')[1]
       router.get(path, mappings[url])
       console.log(`register url [${url}]`)
+    }
+    if(url.startsWith('POST')) {
+      var path = url.split(' ')[1]
+      router.post(path, mappings[url])
+      console.log(`register url [${url}]`)
+    }
   }
 }
 
