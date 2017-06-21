@@ -2,6 +2,7 @@ var greet = require('./hello')
 
 var fsRead = require('./fs-read')
 var fsWrite = require('./fs-write')
+var fsState = require('./fs-state')
 
 var hello = function() {
     greet.node()
@@ -30,6 +31,8 @@ var main = function() {
     hello()
     fio()
     fioW()
+    fsState.astate()
+    fsState.nstate()
 }
 
 module.exports = main
